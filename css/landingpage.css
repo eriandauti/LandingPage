@@ -1,0 +1,52 @@
+.container{
+    margin-top: 40px;
+}
+.nav{
+    padding-left: 200px;
+    
+}
+.nav a{
+    padding-right: 30px;
+    text-decoration: none;
+    color: lightgray;
+}
+.row{
+    margin: 10px 10px 5px 4px;
+}
+
+.logo{
+    display: flex;
+}
+
+.row-two{
+    background-color: grey;
+}
+.first-image{
+    width: 450px;
+    height: 350px;
+}
+
+.content{
+    margin-top: 50px;
+}
+
+.content-two{
+    padding-right: 50px;
+}
+
+.sc-two{
+    margin-top:50px ;
+}
+
+button {
+  background-color: rgb(69,143,246);
+  background-image: rgb(69,143,246);
+  border-radius: 100px;
+  border-width: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 6px 20px;
+  margin-top: 10px;
+}
+
