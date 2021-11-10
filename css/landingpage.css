@@ -1,10 +1,9 @@
 .container{
     margin-top: 40px;
 }
-
 .nav{
     padding-left: 200px;
-    
+
 }
 .nav a{
     padding-right: 30px;
@@ -58,17 +57,36 @@ button {
   padding: 6px 20px;
   margin-top: 10px;
 }
-
 .section-two{
     margin-top: 100px;
     text-align: center;
 }
-
 h4{
     letter-spacing: 1px;
 }
-
 .line-text{
     font-size: 13px;
     color: rgb(125, 121, 135);
+}
+
+.sc-page{
+    margin-top: 40px;
+    background-image: url(/images/bg.jpg);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.frameimage{
+    height: 90px;
+    width: 90px;
+    align-items: initial;
+}
+
+.btn{
+    padding: 30px 30px ;
+    background-color: white;
+    background-position: initial;
+    text-align: left;
+    border-radius: 20px;
 }
