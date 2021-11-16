@@ -8,6 +8,7 @@
     align-items: center;
 }
 
+
 .logo {
     display: flex;
     gap: 3px;
@@ -67,35 +68,35 @@
     margin-top: 15em;
 }
 
-.line{
+.line {
     margin: 30px 0 30px 0;
 }
-.learn{
-    border: none; 
+
+.learn {
+    border: none;
 }
 
-.insert{
+.insert {
     display: flex;
-    margin-top: 6em; 
+    margin-top: 6em;
     align-content: center;
     justify-content: center;
- }
- 
-.img{
+}
+
+.img {
     height: 50px;
     width: 50px;
     margin-bottom: 20px;
 }
 
-#button{
+#button {
     display: flex;
     margin-top: 100px;
     justify-content: center;
     text-align: center;
-    
 }
-.buttons{
-    
+
+.buttons {
     border: 1px solid rgb(69, 143, 246);
     color: rgb(69, 143, 246);
     border-radius: 50px;
@@ -108,48 +109,44 @@
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.0);
 }
 
-.item{
+.item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 10em;
- 
 }
 
-.content{
+.content {
     padding: 10px 0 0 200px;
 }
 
-
-#learn-more{
+#learn-more {
     display: flex;
     margin-top: 40px;
     justify-content: start;
     text-align: center;
 }
 
-.download{
+.download {
     align-items: center;
     margin-top: 8em;
 }
 
-
-.testimonials{
+.testimonials {
     align-items: center;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-.testimony{
+.testimony {
     display: flex;
-   
 }
 
-.paragraph{
-   align-items: center;
-   justify-content: center;
+.paragraph {
+    align-items: center;
+    justify-content: center;
 }
 
 .testimonials {
@@ -183,17 +180,18 @@
     display: flex;
     margin-top: 80px;
 }
-#man{
+
+#man {
     display: flex;
     align-items: center;
 }
 
-.latest{
+.latest {
     margin: 6em 0 6em 0;
     align-items: center;
     text-align: center;
-
 }
+
 .last {
     display: flex;
     justify-content: space-evenly;
@@ -204,71 +202,79 @@
     border-color: rgb(233, 231, 231);
     box-shadow: 0px 21px 3px 0px rgba(193, 211, 216, 0.068);
     border: none;
-  
 }
 
-#card{
+.last a{
+    text-decoration: none;
+    color: rgb(64, 137, 237);
+}
+
+#card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    
 }
 
-.last-button{
+.last-button {
     display: flex;
     margin-top: 100px;
     justify-content: center;
     text-align: center;
-   
-} 
+}
 
-.footer{
+
+#footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-family: mulish;
-    background-color:rgb(129, 198, 235);
+    background-color: rgb(129, 198, 235);
     margin-top: 8em;
     height: 432px;
     color: white;
     font-size: 18px;
-  
 }
-.info{
+
+#info {
     display: flex;
-    justify-content: space-evenly;
+   
     align-items: center;
-
 }
 
-.company-name{
-    justify-content: space-around;
-}
 
-.company{
+
+.company {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    float: right;
-    
 }
 
-.footer a{
+#footer a {
     text-decoration: none;
 }
 
 
-#copyright{
+
+#copyright {
     margin-top: 10px;
 }
 
-#list a{
+#list a {
     display: block;
     color: white;
     align-items: center;
     padding-bottom: 5px;
+    text-decoration: none;
+    align-items: center;
 }
+
+.container-fluid{
+    background-color: rgb(129, 198, 235);
+}
+ 
+
+
 
 /*
 
@@ -604,4 +610,3 @@ h4 {
     text-decoration: none;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.0);
 }
-
