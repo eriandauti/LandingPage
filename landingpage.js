@@ -13,4 +13,4 @@ function show(){
 
 function close(){
     navcontent.style.top = '-100%';
-}
+}       
