@@ -5,68 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./bootstrap/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="./bootstrap/bootstrap.min.css"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/landingpage.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Source+Sans+Pro:wght@600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./bootstrap/bootstrap.js">
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.js">
-    <link rel="stylesheet" href="./js/landingpage.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="./libs/slick/slick/slick.css">
+    <link rel="stylesheet" href="./libs/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
 
 </head>
 
 <body>
     <section class="container">
-        <div class="row  header">
-            <div class="col-md-6">
+        <!-- <div class="row  header">
+            <div class=" col-md-6 nav-logo">
                 <div class="logo">
                     <img src="./images/logo.png" alt="Circle" class="image">
                     <h6 class="logo-title"><b>Trafalgar</b></h6>
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="navcontent">
-                    <div class="openMenu"><i class="fa fa-bars"></i></div>
-                    <ul>
-                        <li> <a><span class="black"><b>Home</b></span></a></li>
-                        <li> <a href="#">Find a doctor</a></li>
-                        <li> <a href="#">Apps</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">About Us</a></li>
-                    </ul>
-                    <div class="closeMenu"><i class="fa fa-times"></i></div>
-                </div>
+            <div class="hamburger"><i class="fa fa-bars"></i></div>
+
+            <div class="navcontent">
+                <ul >
+                    <li> <a><span class="black"><b>Home</b></span></a></li>
+                    <li> <a href="#">Find a doctor</a></li>
+                    <li> <a href="#">Apps</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
             </div>
-        </div>
+        </div>  -->
 
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
 
         <div class="row">
             <div class="hero">
                 <div class=" col-md-6">
                     <div class="title">
                         <div class="first-sec-title">
-                            <p >Virtual healthcare for you</p>
+                            <p>Virtual healthcare for you</p>
                         </div>
-                     
-                    <div>
-                        <p class="line-text">Trafalgar provides progressive and affordable healthcare, accesible on
-                            mobile and
-                            online for everyone </p>
+
+                        <div>
+                            <p class="line-text">Trafalgar provides progressive and affordable healthcare, accesible on
+                                mobile and
+                                online for everyone </p>
+                        </div>
+                        <div id="f-button">
+                            <a class="first-button" href="#">Consult Today</a>
+                        </div>
                     </div>
-                    <div id="f-button" >
-                    <a class="first-button" href="#">Consult Today</a>
-                    </div>  
+
                 </div>
-               
-            </div>
                 <div class="col-md-6">
                     <img src="./images/img1.jpg" alt="first-image" class="first-image">
 
@@ -150,57 +187,55 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div id="button">
-            <a class="buttons" href="#">Learn More</a>
-        </div>
-
-        <div class="row ">
-            <div class="item">
-            <div class="content">
-                <div class="col-md-6">
-                    <div>
-                        <img src="./images/img2.jpg" alt="first-image" class="first-image">
-                    </div>
-                </div>
-
-                <div class="col-md-6 ">
-                    <div id="lead">
-                        <div class="lead-title">
-                            <p>Leading healthcare providers</p>
-                            <img src="./images/line.jpg" alt="Line" class="line">
-                        </div>
-                        <div class="line-text">
-                            <p>Trafalgar provides progressive and affordable healthcare, accesible on mobile and
-                                online for everyone </p>
-                        </div>
-                        <div id="learn-more">
-                            <a class="buttons" href="#">Learn More</a>
-                        </div>
-                    </div>
-                </div>
+            <div id="button">
+                <a class="buttons" href="#">Learn More</a>
             </div>
         </div>
+
+
+
+
+        <div class="row item ">
+                <div class="content">
+                    <div class="col-md-6">
+                        <div>
+                            <img src="./images/img2.jpg" alt="first-image" class="first-image">
+                        </div>
+                    </div>
+
+                        <div id="lead">
+                            <div class="lead-title">
+                                <p>Leading healthcare providers</p>
+                                <img src="./images/line.jpg" alt="Line" class="line">
+                            </div>
+                            <div class="line-text">
+                                <p>Trafalgar provides progressive and affordable healthcare, accesible on mobile and
+                                    online for everyone </p>
+                            </div>
+                            <div id="button">
+                                <a class="buttons" href="#">Learn More</a>
+                            </div>
+                        </div>
+                </div>
+
 
         </div>
 
 
         <div class="row download">
             <div class="content">
-                <div class="col-md-6">
+                <div class="col-md-6 download-title">
                     <div class="lead-title">
                         <p>Download our mobile apps</p>
                         <img src="./images/line.jpg" alt="Line" class="line">
                     </div>
                     <div class="line-text">
-                        <p>Our dedicated patient engagement app and 
-                            web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                        <p>Our dedicated patient engagement app and
+                            web portal allow you to access information instantaneously (no tedeous form, long calls,
                             or administrative hassle) and securely </p>
                     </div>
-                
-                    <div id="learn-more">
+
+                    <div id="button">
                         <a class="buttons" href="#">Download</a>
                     </div>
                 </div>
@@ -213,58 +248,118 @@
         </div>
 
 
-        <div class="testimonials">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="center">
-                        <h4>What our customer are saying</h4>
-                        <img src="./images/white.jpg" alt="Line" class="line">
-                    </div>
-                </div>
-            </div>
+
+        <div id="homepage-slider">
+            <div class="slider-hero">
+                <div>
+                    <div class="testimonials">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="center">
+                                    <h4>What our customer are saying</h4>
+                                    <img src="./images/white.jpg" alt="Line" class="line">
+                                </div>
+                            </div>
+                        </div>
 
 
-            <div class="row person">
-                    <div class="col-md-6 ">
-                        <div id="man">
-                            <img src="./images/person.jpg" alt="Man" class="img-circle">
-                            <div class="person-name">
-                                <h6>Edward Newgate</h6>
-                                <p>Founder Circle</p>
+                        <div class="row person">
+                            <div class="col-md-6 ">
+                                <div id="man">
+                                    <img src="./images/person.jpg" alt="Man" class="img-circle">
+                                    <div class="person-name">
+                                        <h6>Edward Newgate</h6>
+                                        <p>Founder Circle</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <div class="quote">“Our dedicated patient engagement app and
+                                    web portal allow you to access information instantaneously (no tedeous form, long
+                                    calls,
+                                    or administrative hassle) and securely”
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-6 ">
-                        <div class="quote">“Our dedicated patient engagement app and
-                            web portal allow you to access information instantaneously (no tedeous form, long calls,
-                            or administrative hassle) and securely”
+                </div>
+                <div>
+                    <div class="testimonials">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="center">
+                                    <h4>What our customer are saying</h4>
+                                    <img src="./images/white.jpg" alt="Line" class="line">
+                                </div>
+                            </div>
                         </div>
 
 
+                        <div class="row person">
+                            <div class="col-md-6 ">
+                                <div id="man">
+                                    <img src="./images/person.jpg" alt="Man" class="img-circle">
+                                    <div class="person-name">
+                                        <h6>Edward Newgate</h6>
+                                        <p>Founder Circle</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <div class="quote">“Our dedicated patient engagement app and
+                                    web portal allow you to access information instantaneously (no tedeous form, long
+                                    calls,
+                                    or administrative hassle) and securely”
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div>
+                    <div class="testimonials">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="center">
+                                    <h4>What our customer are saying</h4>
+                                    <img src="./images/white.jpg" alt="Line" class="line">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row person">
+                            <div class="col-md-6 ">
+                                <div id="man">
+                                    <img src="./images/person.jpg" alt="Man" class="img-circle">
+                                    <div class="person-name">
+                                        <h6>Edward Newgate</h6>
+                                        <p>Founder Circle</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <div class="quote">“Our dedicated patient engagement app and
+                                    web portal allow you to access information instantaneously (no tedeous form, long
+                                    calls,
+                                    or administrative hassle) and securely”
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- <div class="testimonials">
-            <div class="center">
-                <h4>What our customer are saying</h4>
-                <img src="./images/white.jpg" alt="Line" class="line">
-            </div>
 
-            <div class="person">
-                <div id="man">
-                    <img src="./images/person.jpg" alt="Man" class="img-circle">
-                    <div class="person-name"><h6>Edward Newgate</h6>
-                        <p>Founder Circle</p>
-                    </div>
-                </div>
-                     
-                <div class="quote">“Our dedicated patient engagement app and 
-                    web portal allow you to access information instantaneously (no tedeous form, long calls,
-                    or administrative hassle) and securely”
-                </div>
-            </div> -->
 
 
         <div class="latest">
@@ -272,7 +367,7 @@
                 <h3>Check out our latest article</h3>
                 <img src="./images/line.jpg" alt="line">
             </div>
-        </div> 
+        </div>
 
         <div id="card-t">
 
@@ -307,68 +402,76 @@
                     <a href="#" class="card-link">Read More &nbsp;<i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
+            <div id="button">
+                <a class="buttons" href="#">View All</a>
+            </div>
         </div>
 
-        <div class="last-button">
-            <a class="buttons" href="#">View All</a>
-        </div>
+
     </section>
 
     <div class="container-fluid">
-            <div class="container">
-                <div class="row footer">
-                        <div class="col-xs-6 col-sm-3 ">
-                            <div id="company-name">
-                                <div id="logo-two">T</div>
-                                <p><b>Trafalgar</b></p>
-                            </div>
-                            <div id="description">
-                                <p>Trafalgar provides progressive, and affordable healthcare, accessible
-                                    on
-                                    mobile and online
-                                    for everyone
-                                </p>
-                            </div>
-                            <div id="copyright">
-                                ©Trafalgar PTY LTD 2020. All rights reserved
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 company">
-                            <div id="list">
-                                <ul><a href="#"><b>Company</b></a>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Find a doctor</a></li>
-                                    <li><a href="#">Apps</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 company">
-                            <div id="list">
-                                <ul><a href="#"><b>Region</b></a>
-                                    <li><a href="#">Indonesia</a></li>
-                                    <li><a href="#">Singapore</a></li>
-                                    <li><a href="#">HongKong</a></li>
-                                    <li><a href="#">Canada</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 company">
-                            <div id="list">
-                                <ul><a href="#"><b>Help</b></a>
-                                    <li><a href="#">Help center</a></li>
-                                    <li><a href="#">Contact support</a></li>
-                                    <li><a href="#">Instructions</a></li>
-                                    <li><a href="#">How it works</a></li>
-                                </ul>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row footer">
+                <div class="col-xs-6 col-sm-3 ">
+                    <div id="company-name">
+                        <div id="logo-two">T</div>
+                        <p><b>Trafalgar</b></p>
+                    </div>
+                    <div id="description">
+                        <p>Trafalgar provides progressive, and affordable healthcare, accessible
+                            on
+                            mobile and online
+                            for everyone
+                        </p>
+                    </div>
+                    <div id="copyright">
+                        ©Trafalgar PTY LTD 2020. All rights reserved
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 company">
+                    <div id="list">
+                        <ul><a href="#"><b>Company</b></a>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Find a doctor</a></li>
+                            <li><a href="#">Apps</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 company">
+                    <div id="list">
+                        <ul><a href="#"><b>Region</b></a>
+                            <li><a href="#">Indonesia</a></li>
+                            <li><a href="#">Singapore</a></li>
+                            <li><a href="#">HongKong</a></li>
+                            <li><a href="#">Canada</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 company">
+                    <div id="list">
+                        <ul><a href="#"><b>Help</b></a>
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Contact support</a></li>
+                            <li><a href="#">Instructions</a></li>
+                            <li><a href="#">How it works</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        
+        </div>
+
     </div>
 
-    <script src="./js/app.min.js"></script>
+
 </body>
 
 </html>
+<script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript "
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script src="landingpage.js"></script>
+<!-- <script src="bootstrap/bootstrap.min.js"></script> -->

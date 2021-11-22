@@ -1,12 +1,14 @@
-body, html{
+body, html {
     overflow-x: hidden;
 }
+
 body {
     font-family: mulish;
-  
+
     width: 100%;
 
 }
+
 
 p {
     font-weight: lighter;
@@ -14,9 +16,10 @@ p {
 
 .header {
     display: flex;
+    width: 100%;
     height: 100px;
     align-items: center;
-    
+
 }
 
 .logo {
@@ -44,6 +47,7 @@ p {
 .navcontent {
     display: flex;
     justify-content: flex-end;
+    width: 50%;
 }
 
 .navcontent a {
@@ -61,10 +65,10 @@ p {
     display: flex;
 }
 
-.openMenu {
+.hamburger {
     display: none;
     font-size: 2rem;
-    margin: 20px;
+
     cursor: pointer;
 }
 
@@ -78,7 +82,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10em;
+    margin-top: 5px;
 }
 
 .title {
@@ -105,15 +109,17 @@ p {
     text-decoration: none;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.0);
 }
-.first-line-text{
+
+.first-line-text {
     width: 100%;
-    
+
 }
 
-.first-sec-title{
+.first-sec-title {
     font-size: 36px;
     font-weight: 800;
 }
+
 .section-two {
     align-items: center;
     text-align: center;
@@ -124,11 +130,12 @@ p {
     margin: 30px 0 30px 0;
 }
 
-.line-text{
+.line-text {
     width: 60%;
     justify-content: center;
- 
+
 }
+
 .learn {
     justify-content: space-evenly;
     align-items: flex-start;
@@ -170,7 +177,7 @@ p {
 
 #button {
     display: flex;
-    margin-top: 100px;
+    margin-top: 30px;
     justify-content: center;
     text-align: center;
 }
@@ -204,6 +211,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0 50px;
     /* padding: 10px 0 0 200px; */
 }
 
@@ -219,13 +227,16 @@ p {
     text-align: center;
 }
 
+.download-title{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
 .lead-title {
     width: 70%;
     font-weight: 800;
     font-size: 36px;
 }
-
-
 
 .download {
     align-items: center;
@@ -238,8 +249,6 @@ p {
     min-height: 300px;
 
 }
-
-
 
 .center h4 {
     text-align: center;
@@ -275,15 +284,15 @@ p {
 
 .center {
     text-align: center;
-    
-   
+
+
 }
 
 .person {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .person-name {
@@ -305,7 +314,7 @@ p {
 
 .quote {
     width: 65%;
-   
+
 }
 
 .latest {
@@ -429,8 +438,8 @@ p {
     font-size: 20px;
 }
 
-#company-name  {
-   gap: 20px;
+#company-name {
+    gap: 20px;
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 15px;
@@ -458,11 +467,17 @@ p {
     background-color: rgb(129, 198, 235);
 }
 
+
 #card-t {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
+@media screen and (max-height: 800px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
 
 @media (max-width: 800px) {
     .item {
@@ -472,29 +487,104 @@ p {
         justify-content: center;
         gap: 30px;
     }
+
     .lead-title {
         justify-content: flex-start;
         text-align: center;
         width: 100%;
     }
+
     .line-text {
         text-align: center;
         width: 100%;
     }
+
     .buttons {
         width: 100%;
         margin-top: 5px
+    }
+
+    #learn {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .header {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .nav-logo {
+        width: 50%;
+    }
+
+    .section-two {
+        margin-top: 2em;
+    }
+
+    .line {
+        margin: 0;
+    }
+
+    .insert {
+        margin-top: 1em;
+    }
+
+    #button {
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+
+    .download {
+        margin-top: 1em;
+
+    }
+
+    .download-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .slick-slide img {
+        margin-top: 1em;
+    }
+
+    .latest {
+        margin: 0;
+    }
+
+    #lead {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
     }
 }
 
 @media (max-width: 800px) {
     #card-t {
-        overflow: hidden;
+
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin-top: 10px;
+
     }
+
     .last {
         width: 80%;
         margin-top: 20px;
@@ -510,20 +600,24 @@ p {
         width: 100%;
         gap: 30px;
     }
+
     .lead-title {
         text-align: center;
         width: 100%;
         font-size: 25px;
     }
+
     .line-text {
         text-align: center;
         width: 100%;
     }
+
     @media (max-width: 800px) {
         .last-button {
-            margin-top:30px ;
+            margin-top: 30px;
         }
     }
+
     /* @media (max-width: 800px) {
     .download {
         overflow: hidden;
@@ -539,6 +633,7 @@ p {
             align-items: center;
             justify-content: center;
         }
+
         .title {
             display: flex;
             flex-direction: column;
@@ -548,24 +643,32 @@ p {
             margin-bottom: 20px;
             width: 100%;
         }
+
         .high {
             align-items: center;
             text-align: center;
             font-size: 30px;
             font-weight: 800;
         }
+
         .line-text {
             align-items: center;
             text-align: center;
             font-size: 13px;
         }
+
         .first-button a {
             text-align: center;
             width: 100%;
             align-items: center;
         }
     }
+
     @media (max-width: 800px) {
+        .navcontent.active {
+            display: block;
+        }
+
         .navcontent a {
             overflow: hidden;
             height: 100vh;
@@ -581,6 +684,7 @@ p {
             left: 0;
             text-decoration: none;
         }
+
         .closeMenu {
             overflow: hidden;
             display: none;
@@ -588,11 +692,17 @@ p {
             top: 20px;
             right: 20px;
         }
-        .openMenu {
+
+        .hamburger {
             overflow: hidden;
             display: block;
         }
+
+        .unordered {
+            display: block;
+        }
     }
+
     @media (max-width:800px) and (min-width:400px) {
         #lead {
             overflow: hidden;
@@ -602,53 +712,56 @@ p {
             display: flex;
             flex-direction: column;
         }
+
         .title {
             width: 100%;
         }
     }
-    @media (max-width:800px)  { 
-       .person{
-        align-items: center;
-        
-       }
 
-       .quote{
-           width: 100%;
-       }
-       #man{
-           padding-right: 23px ;
-           
-       }
-    }
-        
-    @media (max-width:800px)  {
-        
-
-        .footer{
-            display: flex;
+    @media (max-width:800px) {
+        .person {
+            align-items: center;
 
         }
+
+        .quote {
+            width: 100%;
+        }
+
+        #man {
+            padding-right: 23px;
+
+        }
+    }
+
+    @media (max-width:800px) {
+
+
+        .footer {
+            display: flex;
+            margin-top: 1em;
+
+        }
+
         #company-name {
             text-align: center;
             align-content: center;
             justify-content: center;
             font-size: 20px;
-        
-
         }
 
-        .company{
+        .company {
             text-align: center;
             flex-basis: content;
             padding: 0;
 
         }
 
-        #list li a{
+        #list li a {
             font-size: 10px;
         }
 
-        #list a{
+        #list a {
             padding: 0;
         }
 
@@ -657,32 +770,41 @@ p {
             font-size: 10px;
             text-align: center;
         }
+
         #description {
             display: block;
             font-size: 10px;
             width: 100%;
             text-align: center;
         }
+
         #list {
             display: block;
             text-align: center;
             align-items: center;
             font-size: 10px;
-           
+
         }
+
         #list a {
             display: flex;
             align-items: center;
             font-size: 13px;
         }
+
+        .img {
+            width: 40px;
+            height: 40px;
+        }
+
     }
 
     @media (max-width:800px) {
-        .learn{
+        .learn {
             align-items: center;
         }
 
-        .card-text{
+        .card-text {
             text-align: center;
         }
     }

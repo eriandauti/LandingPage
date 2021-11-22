@@ -1,16 +1,17 @@
-const navcontent = document.querySelector('.navcontent');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
-
-
-openMenu.addEventListener('click',show);
-closeMenu.addEventListener('click',close);
-
-function show(){
-    navcontent.style.display = 'flex';
-    navcontent.top = '0';
-}
-
-function close(){
-    navcontent.style.top = '-100%';
-}       
+    $(document).ready(function(){
+        const navcontent = document.querySelector('.navcontent');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
+       
+       $('.hamburger').click(function () {
+            $(this).parent().find('.navcontent').toggleClass('active');
+       });
+        
+        $('.slider-hero').slick({
+            dots: true,
+            infinite: true,
+            cssEase: 'linear',
+            swipe: true,
+        });
+       
+     }); 
